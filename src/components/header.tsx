@@ -1,7 +1,7 @@
 import reactLogo from "../assets/react.svg";
 import "./header.css";
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <div className="header-inner">
@@ -12,6 +12,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
