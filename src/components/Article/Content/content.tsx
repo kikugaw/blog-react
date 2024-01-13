@@ -1,4 +1,4 @@
-import ArticleList from "./article_list";
+import ArticleList from "../article_list";
 
 const Content = () => {
   return (
