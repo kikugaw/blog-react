@@ -1,0 +1,49 @@
+li {
+  list-style: none;
+}
+
+.article-list-item {
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.article-list-item-title {
+  padding: 10px;
+}
+
+.article-list-item-title a {
+  color: #535353;
+  font-size: 18px;
+  width: 100%;
+}
+
+.date-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.date {
+  color: #666;
+  font-size: 0.7rem;
+}
+
+.tag {
+  width: fit-content;
+  border-color: #6dbe44;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  color: #6dbe44;
+  margin-left: 2px;
+  position: relative;
+  border-radius: 2px;
+  text-align: center;
+}
+
+p {
+  color: darkgray;
+  font-size: 12px;
+  margin: 0;
+}

@@ -1,20 +1,26 @@
-const ArticleItem = () => {
+import "./article_item.css";
+type ArticleItemProps = {
+  title: string;
+  date: Date;
+  tag: Array<string>;
+  content: string;
+};
+
+const ArticleItem = (props: ArticleItemProps) => {
+  const formattedDate = props.date.toLocaleDateString();
   return (
     <li>
       <div className="article-list-item">
         <div className="article-list-item-title">
-          <h2>
-            <a>title</a>
-          </h2>
-          <div className="data-wrapper">
-            <small>2024-01-02</small>
-            <div className="tag-wrapper">
-              <div className="tag">tag</div>
-            </div>
-            <br />
-            <p>content</p>
+          <a>{props.title}</a>
+          <div className="date-wrapper">
+            <small>{formattedDate}</small>
+          </div>
+          <div className="tag-wrapper">
+            <div className="tag">{props.tag}</div>
           </div>
         </div>
+        <p>{props.content}</p>
       </div>
     </li>
   );
